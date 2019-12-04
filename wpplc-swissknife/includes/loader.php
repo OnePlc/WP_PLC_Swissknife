@@ -27,7 +27,6 @@ require_once __DIR__.'/Modules/Comments.php';
 require_once __DIR__.'/Modules/Revisions.php';
 require_once __DIR__.'/Modules/Sitekit.php';
 require_once __DIR__.'/Modules/Tweaks.php';
-require_once __DIR__.'/Modules/Updater.php';
 
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);

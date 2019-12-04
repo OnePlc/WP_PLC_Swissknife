@@ -51,9 +51,6 @@ final class Plugin {
 
         // Enable custom wordpress tweaks
         Modules\Tweaks::load();
-
-        // Enable Auto-Updates via Github
-        Modules\Updater::load();
     }
 
     /**

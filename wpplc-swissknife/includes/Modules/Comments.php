@@ -1,9 +1,9 @@
 <?php
 
 /**
- * Plugin loader.
+ * Wordress Comments Mods
  *
- * @package   OnePlace\Swissknife
+ * @package   OnePlace\Swissknife\Modules
  * @copyright 2019 Verein onePlace
  * @license   https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html GNU General Public License, version 2
  * @link      https://1plc.ch/wordpress-plugins/swissknife
@@ -68,11 +68,10 @@ final class Comments {
     }
 
     /**
-     * Loads the plugin main instance and initializes it.
+     * Loads the module main instance and initializes it.
      *
      * @since 0.1-stable
      *
-     * @param string $main_file Absolute path to the plugin main file.
      * @return bool True if the plugin main instance could be loaded, false otherwise.
      */
     public static function load() {
