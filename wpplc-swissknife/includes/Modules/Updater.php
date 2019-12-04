@@ -47,7 +47,7 @@ final class Updater {
         ];
 
         // For TESTING ONLY
-        set_site_transient( 'update_plugins', null );
+        //set_site_transient( 'update_plugins', null );
 
         add_filter( "pre_set_site_transient_update_plugins", [$this, "setTransient" ] );
 
