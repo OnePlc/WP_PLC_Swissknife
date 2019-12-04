@@ -9,14 +9,13 @@
  * @link      https://1plc.ch/wordpress-plugins/swissknife
  */
 
-namespace OnePlace\Swissknife;
+namespace OnePlace\Swissknife\Modules;
 
-/**
- * Main class for the plugin
- */
-final class Plugin {
+use OnePlace\Swissknife\Plugin;
+
+final class Revisions {
     /**
-     * Main instance of the plugin.
+     * Main instance of the module
      *
      * @since 0.1-stable
      * @var Plugin|null
@@ -24,36 +23,16 @@ final class Plugin {
     private static $instance = null;
 
     /**
-     * Retrieves the main instance of the plugin.
-     *
-     * @since 0.1-stable
-     *
-     * @return Plugin Plugin main instance.
-     */
-    public static function instance() {
-        return static::$instance;
-    }
-
-    /**
-     * Registers the plugin with WordPress.
+     * Enable Google Sitekit IP Anonymization
      *
      * @since 0.1-stable
      */
     public function register() {
-        // Enable Custom Comments Settings
-        Modules\Comments::load();
+        // change autosave interval from 60 to 300 seconds
+        define('AUTOSAVE_INTERVAL', 300);
 
-        // Enable Custom Revision Settings
-        Modules\Revisions::load();
-
-        // Enable Sitekit Custom Settings
-        Modules\Sitekit::load();
-
-        // Enable custom wordpress tweaks
-        Modules\Tweaks::load();
-
-        // Enable Auto-Updates via Github
-        Modules\Updater::load();
+        // disable post revision
+        define('WP_POST_REVISIONS', false);
     }
 
     /**
@@ -64,11 +43,11 @@ final class Plugin {
      * @param string $main_file Absolute path to the plugin main file.
      * @return bool True if the plugin main instance could be loaded, false otherwise.
      */
-    public static function load( $main_file ) {
+    public static function load() {
         if ( null !== static::$instance ) {
             return false;
         }
-        static::$instance = new static( $main_file );
+        static::$instance = new self();
         static::$instance->register();
         return true;
     }

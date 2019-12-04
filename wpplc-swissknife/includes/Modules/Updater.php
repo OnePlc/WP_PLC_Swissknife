@@ -54,7 +54,17 @@ final class Updater {
         add_filter( "plugins_api", [ $this, "setPluginInfo" ], 10, 3 );
     }
 
-    // Push in plugin version information to display in the details lightbox
+    /**
+     * Push in plugin version information to display in the details lightbox
+     *
+     * @param $false
+     * @param $action
+     * @param $response
+     *
+     * @since 0.2-stable
+     *
+     * @return bool
+     */
     public function setPluginInfo( $false, $action, $response ) {
         // Get plugin & GitHub release information
         //$this->initPluginData();
@@ -96,6 +106,17 @@ final class Updater {
         return $response;
     }
 
+    /**
+     * Set Update Information for Wordpress
+     *
+     * Shows Update Message if new version is available
+     *
+     * @param $transient
+     *
+     * @since 0.2-stable
+     *
+     * @return mixed
+     */
     public function setTransient($transient) {
         // If we have checked the plugin data before, don't re-check
         if ( empty( $transient->checked ) ) {
@@ -131,6 +152,11 @@ final class Updater {
         return $transient;
     }
 
+    /**
+     * Get Release information from github
+     *
+     * @since 0.2-stable
+     */
     public function getRepoReleaseInfo() {
         if ( ! empty( $this->githubAPIResult ) ) {
             return;

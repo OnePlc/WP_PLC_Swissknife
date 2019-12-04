@@ -23,7 +23,10 @@ require __DIR__ . '/vendor/autoload.php';
 require_once __DIR__.'/Plugin.php';
 
 // Load Modules
+require_once __DIR__.'/Modules/Comments.php';
+require_once __DIR__.'/Modules/Revisions.php';
 require_once __DIR__.'/Modules/Sitekit.php';
+require_once __DIR__.'/Modules/Tweaks.php';
 require_once __DIR__.'/Modules/Updater.php';
 
 ini_set('display_errors', 1);
