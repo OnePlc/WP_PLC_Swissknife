@@ -29,10 +29,14 @@ final class Revisions {
      */
     public function register() {
         // change autosave interval from 60 to 300 seconds
-        define('AUTOSAVE_INTERVAL', 300);
+        if(defined('AUTOSAVE_INTERVAL')) {
+            define('AUTOSAVE_INTERVAL', 300);
+        }
 
         // disable post revision
-        define('WP_POST_REVISIONS', false);
+        if(defined('WP_POST_REVISIONS')) {
+            define('WP_POST_REVISIONS', false);
+        }
     }
 
     /**
