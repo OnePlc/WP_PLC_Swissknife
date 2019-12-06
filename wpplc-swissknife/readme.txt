@@ -46,6 +46,18 @@ Just install and active. no setup or configuration yet.
 
 == Changelog ==
 
+= 0.3.4 =
+* Added "disable embeds" option
+* Added "disable autosave" option
+* Added "limit revisions" option
+* Added "disable self-pingbank" option
+* Added "Remove jquery migrate" option
+* Added "remove shortlink" option
+* Added "disable rss feeds" option
+* Added "disable rest api" option
+* Added "remove querystring from static resources" option
+* Settings Page added - enable and disable single options
+
 = 0.3.3 =
 * Removed display_errors
 * Added readme.txt

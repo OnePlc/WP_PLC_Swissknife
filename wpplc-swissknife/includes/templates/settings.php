@@ -8,9 +8,7 @@
                     <div class="plc-settings-header-main-title" style="height: 52px;line-height: 52px;font-size: 17px;color:#fff;margin: 0;">WP PLC Swissknife <small>Version 0.3.4</small></div>
                 </div>
                 <div style="width:33%; text-align: center;">
-                    <object data="/wp-content/plugins/wpplc-swissknife/assets/img/icon.svg" width="42" height="42" style="fill:white !important;">
-                        <img src="/wp-content/plugins/wpplc-swissknife/assets/img/icon.svg" width="42" height="42 " style="fill:#fff;"/>
-                    </object>
+                    <img src="/wp-content/plugins/wpplc-swissknife/assets/img/icon.png" style="max-height:42px;"/>
                 </div>
                 <div style="width:33%; text-align: right;">
                     Need help?

@@ -59,6 +59,14 @@ final class Settings {
         // Module Tweaks
         register_setting( 'wpplc_swissknife_options', 'wpplc_swissknife_disable_emojis', false );
         register_setting( 'wpplc_swissknife_options', 'wpplc_swissknife_disable_xmlrpc', false );
+        register_setting( 'wpplc_swissknife_options', 'wpplc_swissknife_disable_embeds', false );
+        register_setting( 'wpplc_swissknife_options', 'wpplc_swissknife_disable_self_pingback', false );
+        register_setting( 'wpplc_swissknife_options', 'wpplc_swissknife_remove_qry_static', false );
+        register_setting( 'wpplc_swissknife_options', 'wpplc_swissknife_remove_jquery_migrate', false );
+        register_setting( 'wpplc_swissknife_options', 'wpplc_swissknife_remove_shortlink', false );
+        register_setting( 'wpplc_swissknife_options', 'wpplc_swissknife_disable_rssfeeds', false );
+        register_setting( 'wpplc_swissknife_options', 'wpplc_swissknife_disable_restapi', false );
+
     }
 
     /**
