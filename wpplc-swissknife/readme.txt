@@ -53,6 +53,7 @@ Just install and active. no setup or configuration yet.
 == Changelog ==
 
 = 0.3.4 =
+* Started to translate Plugin to German
 * Added "disable embeds" option
 * Added "disable autosave" option
 * Added "limit revisions" option
