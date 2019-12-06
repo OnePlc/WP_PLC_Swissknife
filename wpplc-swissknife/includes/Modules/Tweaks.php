@@ -23,7 +23,7 @@ final class Tweaks {
     private static $instance = null;
 
     /**
-     * Disable wordpress comments entirely
+     * Custom wordpress tweaks
      *
      * @since 0.1-stable
      */
@@ -35,6 +35,11 @@ final class Tweaks {
         add_filter('xmlrpc_enabled', '__return_false');
     }
 
+    /**
+     * disable wordpress emojis enterily
+     *
+     * @since 0.3.3
+     */
     public function disableEmojis() {
         remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
         remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );

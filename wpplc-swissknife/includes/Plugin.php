@@ -40,14 +40,21 @@ final class Plugin {
      * @since 0.1-stable
      */
     public function register() {
+        // Enable Settings Page
+        Modules\Settings::load();
+
         // Enable Custom Comments Settings
-        Modules\Comments::load();
+        if(get_option('wpplc_swissknife_disable_comments') == true) {
+            Modules\Comments::load();
+        }
 
         // Enable Custom Revision Settings
         Modules\Revisions::load();
 
         // Enable Sitekit Custom Settings
-        Modules\Sitekit::load();
+        if(get_option('wpplc_swissknife_enable_sitekit_ip_anonymization') == true) {
+            Modules\Sitekit::load();
+        }
 
         // Enable custom wordpress tweaks
         Modules\Tweaks::load();

@@ -25,6 +25,7 @@ require_once __DIR__.'/Plugin.php';
 // Load Modules
 require_once __DIR__.'/Modules/Comments.php';
 require_once __DIR__.'/Modules/Revisions.php';
+require_once __DIR__.'/Modules/Settings.php';
 require_once __DIR__.'/Modules/Sitekit.php';
 require_once __DIR__.'/Modules/Tweaks.php';
 
