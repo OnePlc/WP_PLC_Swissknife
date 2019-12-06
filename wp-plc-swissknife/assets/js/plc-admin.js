@@ -27,10 +27,10 @@ jQuery(function () {
         }
 
         // show we are working
-        jQuery('.plc-admin-alert-container').html('<img src="/wp-content/plugins/wpplc-swissknife/assets/img/ajax-loader.gif" style="position: absolute;" />');
+        jQuery('.plc-admin-alert-container').html('<img src="/wp-content/plugins/wp-plc-swissknife/assets/img/ajax-loader.gif" style="position: absolute;" />');
 
         // update setting
-        jQuery.post('/wp-content/plugins/wpplc-swissknife/includes/ajax/setting_update.php',{setting_name:sName,setting_val:sVal},function(retVal) {
+        jQuery.post('/wp-content/plugins/wp-plc-swissknife/includes/ajax/setting_update.php',{setting_name:sName,setting_val:sVal},function(retVal) {
            jQuery('.plc-admin-alert-container').html(retVal);
         });
     });
