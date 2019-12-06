@@ -52,6 +52,9 @@ Just install and active. no setup or configuration yet.
 
 == Changelog ==
 
+= 0.3.4.1 =
+* hotfix - path corrections
+
 = 0.3.4 =
 * Started to translate Plugin to German
 * Added "disable embeds" option
@@ -75,6 +78,9 @@ Just install and active. no setup or configuration yet.
 * First Version for Wordpress.org Repo
 
 == Upgrade Notice ==
+
+= 0.3.4.1 =
+* hotfix
 
 = 0.3.4 =
 * All settings are disabled by default now
