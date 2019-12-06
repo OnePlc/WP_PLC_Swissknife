@@ -36,6 +36,18 @@ final class Settings {
 
         // Register Settings
         add_action( 'admin_init', [ $this, 'registerSettings' ] );
+
+        // Add Plugin Languages
+        add_action('plugins_loaded', [ $this, 'loadTextDomain' ] );
+    }
+
+    /**
+     * load text domain (translations)
+     *
+     * @since 0.3.4
+     */
+    public function loadTextDomain() {
+        load_plugin_textdomain( 'wpplc-swissknife', false, dirname( plugin_basename(WPPLC_SWISSKNIFE_MAIN_FILE) ) . '/language/' );
     }
 
     /**

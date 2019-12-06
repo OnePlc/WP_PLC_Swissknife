@@ -23,20 +23,43 @@ final class Revisions {
     private static $instance = null;
 
     /**
-     * Enable Google Sitekit IP Anonymization
+     * Enable Revisions Management
      *
      * @since 0.1-stable
      */
     public function register() {
-        // change autosave interval from 60 to 300 seconds
-        if(defined('AUTOSAVE_INTERVAL')) {
-            define('AUTOSAVE_INTERVAL', 300);
+        $bDisableAutosave = get_option('wpplc_swissknife_disable_autosave');
+
+        // disable autosave
+        if($bDisableAutosave == true) {
+            add_action( 'admin_init', [ $this, 'disableAutosave' ] );
+        } else {
+            // change autosave interval from 60 to x seconds
+            if(defined('AUTOSAVE_INTERVAL')) {
+                $iNewInterval = (get_option('wpplc_swissknife_autosave_interval')) ? (int)get_option('wpplc_swissknife_autosave_interval') : 300;
+                define('AUTOSAVE_INTERVAL', $iNewInterval);
+            }
         }
 
-        // disable post revision
+        // disable or limit post revision
         if(defined('WP_POST_REVISIONS')) {
-            define('WP_POST_REVISIONS', false);
+            $bDisableRevisions = get_option('wpplc_swissknife_disable_revisions');
+            if($bDisableRevisions == true) {
+                define('WP_POST_REVISIONS', false);
+            } else {
+                $iNewRevisionLimit = (get_option('wpplc_swissknife_limit_revisions')) ? (int)get_option('wpplc_swissknife_limit_revisions') : 3;
+                define('WP_POST_REVISIONS', $iNewRevisionLimit);
+            }
         }
+    }
+
+    /**
+     * Disable Autosave completly
+     *
+     * @since 0.3.4
+     */
+    public function disableAutosave() {
+        wp_deregister_script( 'autosave' );
     }
 
     /**

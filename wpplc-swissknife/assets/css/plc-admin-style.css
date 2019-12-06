@@ -1,12 +1,52 @@
-/* Admin Meni List Item Container */
-.plc-admin-menu-list-item {
+/* Admin Panel Main Frame */
+div.plc-admin {
+    margin: 0 0 -65px -20px;
+}
+
+/* Admin Panel Settings Wrapper */
+div.plc-settings-wrapper {
+    margin:0; padding:0; display: block !important;
+}
+
+/* Admin Panel Settings Header */
+div.plc-settings-header {
+    padding: 20px 50px 80px; background:#13b4df;
+}
+
+/* Admin Panel Settings Header Content */
+div.plc-settings-header-main {
+    padding-top:12px; position: relative; display: flex; justify-content: space-between;
+}
+
+/* Admin Panel Settings Header Title */
+div.plc-settings-header-main-title {
+    height: 52px;line-height: 52px;font-size: 17px;color:#fff;margin: 0;
+}
+
+/* Admin Panel Main Content Section */
+main.plc-admin-main {
+    position: relative;background:#fff;border-radius: 5px;margin: -60px 50px 0;box-shadow: 0 3px 6px rgba(0,0,0,.11);min-height: 600px;
+}
+
+/* Admin Panel Header Menu Container */
+div.plc-admin-menu-container {
+    width:100%; padding-left:40px; display: inline-block; float:left; border-bottom:1px solid lightgray;
+}
+
+/* Admin Menu List */
+ul.plc-admin-menu-list {
+    margin: 20px 0; list-style-type: none; padding: 0;
+}
+
+/* Admin Menu List Item Container */
+li.plc-admin-menu-list-item {
     margin: 0 30px 0 0;
     position: relative;
     float: left;
 }
 
 /* Admin Menu List Item (Navi) */
-.plc-admin-menu-list-item a {
+li.plc-admin-menu-list-item a {
     display: block;
     position: relative;
     color: #80a5bb;

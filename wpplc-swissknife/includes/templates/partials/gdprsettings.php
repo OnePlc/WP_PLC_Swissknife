@@ -1,5 +1,5 @@
 <article class="plc-admin-page-gdprsettings plc-admin-page" style="padding: 10px 40px 40px 40px">
-    <h1>GDPR Preferences</h1>
+    <h1><?=__('GDPR Preferences','wpplc-swissknife')?></h1>
     <p>Here you can change the basic settings of swissknife plugin</p>
 
     <?php

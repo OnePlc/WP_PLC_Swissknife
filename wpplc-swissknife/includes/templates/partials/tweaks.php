@@ -1,5 +1,5 @@
 <article class="plc-admin-page-tweaks plc-admin-page" style="padding: 10px 40px 40px 40px;">
-    <h1>More Tweaks</h1>
+    <h1><?=__('More Tweaks','wpplc-swissknife')?></h1>
     <p>Here you have some more performance and security tweaks of swissknife plugin</p>
 
     <!-- Disable Emojis Toggle -->

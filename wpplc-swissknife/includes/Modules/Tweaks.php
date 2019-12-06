@@ -29,38 +29,56 @@ final class Tweaks {
      */
     public function register() {
         // Disable wordpress emojis
-        add_action( 'init', [ $this, 'disableEmojis' ] );
+        if(get_option( 'wpplc_swissknife_disable_emojis') == true) {
+            add_action('init', [$this, 'disableEmojis']);
+        }
 
         // Disable XML-RPC
-        add_filter('xmlrpc_enabled', '__return_false');
+        if(get_option( 'wpplc_swissknife_disable_xmlrpc') == true) {
+            add_filter('xmlrpc_enabled', '__return_false');
+        }
 
         // Disable wordpress embeds
-        add_action( 'init', [ $this, 'disableEmbeds' ], 9999 );
+        if(get_option( 'wpplc_swissknife_disable_embeds') == true) {
+            add_action('init', [$this, 'disableEmbeds'], 9999);
+        }
 
         // Disable Self Pingbacks
-        add_action( 'pre_ping', [ $this, 'disableSelfPingbacks' ] );
+        if(get_option( 'wpplc_swissknife_disable_self_pingback') == true) {
+            add_action('pre_ping', [$this, 'disableSelfPingbacks']);
+        }
 
         // Remove Query String from Static resources
-        add_filter( 'style_loader_src', [ $this , 'removeCssJsVersion' ], 10, 2 );
-        add_filter( 'script_loader_src',  [ $this , 'removeCssJsVersion' ], 10, 2 );
+        if(get_option( 'wpplc_swissknife_remove_qry_static') == true) {
+            add_filter('style_loader_src', [$this, 'removeCssJsVersion'], 10, 2);
+            add_filter('script_loader_src', [$this, 'removeCssJsVersion'], 10, 2);
+        }
 
         // Remove jQuery Migrate
-        add_action( 'wp_default_scripts', [ $this, 'removeJqueryMigrate' ] );
+        if(get_option( 'wpplc_swissknife_remove_jquery_migrate') == true) {
+            add_action('wp_default_scripts', [$this, 'removeJqueryMigrate']);
+        }
 
         // Remove Shortlink
-        add_filter('after_setup_theme', [ $this, 'removeShortlink' ]);
+        if(get_option( 'wpplc_swissknife_remove_shortlink') == true) {
+            add_filter('after_setup_theme', [$this, 'removeShortlink']);
+        }
 
         // Disable RSS Feed
-        add_action('do_feed', [ $this, 'disableRSSFeed' ], 1);
-        add_action('do_feed_rdf', [ $this, 'disableRSSFeed' ], 1);
-        add_action('do_feed_rss', [ $this, 'disableRSSFeed' ], 1);
-        add_action('do_feed_rss2', [ $this, 'disableRSSFeed' ], 1);
-        add_action('do_feed_atom', [ $this, 'disableRSSFeed' ], 1);
-        add_action('do_feed_rss2_comments', [ $this, 'disableRSSFeed' ], 1);
-        add_action('do_feed_atom_comments', [ $this, 'disableRSSFeed' ], 1);
+        if(get_option( 'wpplc_swissknife_disable_rssfeeds') == true) {
+            add_action('do_feed', [$this, 'disableRSSFeed'], 1);
+            add_action('do_feed_rdf', [$this, 'disableRSSFeed'], 1);
+            add_action('do_feed_rss', [$this, 'disableRSSFeed'], 1);
+            add_action('do_feed_rss2', [$this, 'disableRSSFeed'], 1);
+            add_action('do_feed_atom', [$this, 'disableRSSFeed'], 1);
+            add_action('do_feed_rss2_comments', [$this, 'disableRSSFeed'], 1);
+            add_action('do_feed_atom_comments', [$this, 'disableRSSFeed'], 1);
+        }
 
         // Disable Rest API
-        add_filter( 'rest_authentication_errors', [ $this, 'disableRestAPI' ] );
+        if(get_option( 'wpplc_swissknife_disable_restapi') == true) {
+            add_filter('rest_authentication_errors', [$this, 'disableRestAPI']);
+        }
     }
 
     /**
@@ -71,7 +89,7 @@ final class Tweaks {
      */
     public function disableRestAPI($access) {
         if( ! is_user_logged_in() ) {
-            return new WP_Error( 'rest_cannot_access', __( 'Only authenticated users can access the REST API.', 'disable-json-api' ), [  'status' => rest_authorization_required_code() ] );
+            return new \WP_Error( 'rest_cannot_access', __( 'Only authenticated users can access the REST API.', 'disable-json-api' ), [ 'status' => rest_authorization_required_code() ] );
         }
         return $access;
     }

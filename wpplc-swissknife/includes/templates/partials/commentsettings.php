@@ -1,5 +1,5 @@
 <article class="plc-admin-page-commentsettings plc-admin-page" style="padding: 10px 40px 40px 40px;">
-    <h1>Comment Preferences</h1>
+    <h1><?=__('Comment Preferences','wpplc-swissknife')?></h1>
     <p>Here you can change the comment settings of swissknife plugin</p>
     <!-- Rectangular switch -->
     <label class="plc-settings-switch">

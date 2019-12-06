@@ -1,5 +1,5 @@
 <article class="plc-admin-page-revisionsettings plc-admin-page" style="padding: 10px 40px 40px 40px;">
-    <h1>Revision Preferences</h1>
+    <h1><?=__('Revision Preferences','wpplc-swissknife')?></h1>
     <p>Here you can change the revision settings of swissknife plugin</p>
 
     <!-- Disable Revisions Toggle -->

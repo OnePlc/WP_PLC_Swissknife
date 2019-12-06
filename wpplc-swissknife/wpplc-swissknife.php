@@ -23,7 +23,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 // Define Version and directories for further use in plugin
-define( 'WPPLC_SWISSKNIFE_VERSION', '0.3.4-stable' );
+define( 'WPPLC_SWISSKNIFE_VERSION', '0.3.4-dev' );
 define( 'WPPLC_SWISSKNIFE_MAIN_FILE', __FILE__ );
 define( 'WPPLC_SWISSKNIFE_MAIN_DIR', __DIR__ );
 define( 'WPPLC_SWISSKNIFE_PUB_DIR',str_replace([$_SERVER['DOCUMENT_ROOT']],[''],WPPLC_SWISSKNIFE_MAIN_DIR));

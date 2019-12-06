@@ -1,7 +1,7 @@
 === WP PLC Swissknife ===
 Contributors: oneplacewp
 Donate link: https://1plc.ch
-Tags: GDPR, cookie law, perfomance, security, comments, xmlrpc
+Tags: GDPR, cookie law, performance, security, comments, xmlrpc, rest, emojis
 Requires at least: 4.6
 Tested up to: 5.3
 Stable tag: stable
@@ -17,19 +17,25 @@ Ensures you comply with the EU cookie law GDPR regulations with following featur
 
 * Enable IP anonymization for Google Sitekit (Analytics)
 
-
 Also with this plugin you can disable some functions which are unnessecarry for a lot of wordpress installations
 
 * Disable Comments
 * Disable XML-RPC
-* Disable Post Revisions
-* Set Autosave from 60 to 300 seconds
+* Disable or Limit Post Revisions
+* Disable or increase Autosave interval
 * Remove Wordpress Emojis
+* Disable Rest-API for logged-out users
+* Disable Embeds
+* Remove Shortlinks
+* Remove Querystring from static resources
+* Remove jQuery migrate
+* Disable RSS Feeds
 
 == Installation ==
 
 1. Upload `wpplc-swissknife.php` to the `/wp-content/plugins/` directory.
 2. Activate the plugin through the 'Plugins' menu in WordPress.
+3. Enable the settings you want in "WP PLC Swissknife" in the Settings Menu in Admin Panel
 
 == Frequently Asked Questions ==
 
@@ -42,7 +48,7 @@ Disable the above listed functions in wordpress to enhance perfomance and securi
 Just install and active. no setup or configuration yet.
 
 == Screenshots ==
-1. There is currently no UI for this plugin
+1. The new Settings Panel. Choose every single setting you want.
 
 == Changelog ==
 
@@ -68,6 +74,9 @@ Just install and active. no setup or configuration yet.
 * First Version for Wordpress.org Repo
 
 == Upgrade Notice ==
+
+= 0.3.4 =
+* All settings are disabled by default now
 
 = 0.3.3 =
 * Implemented Feedback from Wordpress Plugin Review Team
