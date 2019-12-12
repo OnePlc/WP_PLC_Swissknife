@@ -51,6 +51,9 @@ final class Plugin {
         // Enable Custom Revision Settings
         Modules\Revisions::load();
 
+        // Enable Elementor Settings
+        Modules\Elementor::load();
+
         // Enable Sitekit Custom Settings
         if(get_option('wpplc_swissknife_enable_sitekit_ip_anonymization') == true) {
             Modules\Sitekit::load();

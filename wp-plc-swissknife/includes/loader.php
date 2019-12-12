@@ -28,6 +28,7 @@ require_once __DIR__.'/Modules/Revisions.php';
 require_once __DIR__.'/Modules/Settings.php';
 require_once __DIR__.'/Modules/Sitekit.php';
 require_once __DIR__.'/Modules/Tweaks.php';
+require_once __DIR__.'/Modules/Elementor.php';
 
 Plugin::load(WPPLC_SWISSKNIFE_MAIN_FILE);
 

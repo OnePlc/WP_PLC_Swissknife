@@ -79,6 +79,8 @@ final class Settings {
         register_setting( 'wpplc_swissknife_options', 'wpplc_swissknife_disable_rssfeeds', false );
         register_setting( 'wpplc_swissknife_options', 'wpplc_swissknife_disable_restapi', false );
 
+        // Elementor Tweaks
+        register_setting( 'wpplc_swissknife_options', 'wpplc_swissknife_swapload_elementor_fonts', false );
     }
 
     /**

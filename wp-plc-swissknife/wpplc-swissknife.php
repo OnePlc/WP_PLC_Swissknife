@@ -11,7 +11,7 @@
  * Plugin Name: WP PLC Swissknife
  * Plugin URI:  https://1plc.ch/wordpress-plugins/swissknife
  * Description: onePlace Swissknife for Wordpress. Increase Wordpress Security and Performance
- * Version:     0.3.4.1
+ * Version:     0.3.5
  * Author:      Verein onePlace
  * Author URI:  https://1plc.ch
  * License:     GNU General Public License, version 2
@@ -23,10 +23,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 // Define Version and directories for further use in plugin
-define( 'WPPLC_SWISSKNIFE_VERSION', '0.3.4.1-stable' );
+define( 'WPPLC_SWISSKNIFE_VERSION', '0.3.5-stable' );
 define( 'WPPLC_SWISSKNIFE_MAIN_FILE', __FILE__ );
 define( 'WPPLC_SWISSKNIFE_MAIN_DIR', __DIR__ );
-define( 'WPPLC_SWISSKNIFE_PUB_DIR',str_replace([$_SERVER['DOCUMENT_ROOT']],[''],WPPLC_SWISSKNIFE_MAIN_DIR));
+define( 'WPPLC_SWISSKNIFE_PUB_DIR','/wp-content/plugins/wp-plc-swissknife');
 
 /**
  * Handles plugin activation.

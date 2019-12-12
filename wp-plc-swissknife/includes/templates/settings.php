@@ -40,6 +40,11 @@
                             </a>
                         </li>
                         <li class="plc-admin-menu-list-item">
+                            <a href="#/elementorsettings" data-elfsight-admin-page="activation" class="elfsight-admin-tooltip-trigger">
+                                <?=__('Elementor','wpplc-swissknife')?>
+                            </a>
+                        </li>
+                        <li class="plc-admin-menu-list-item">
                             <a href="#/tweaks" data-elfsight-admin-page="activation" class="elfsight-admin-tooltip-trigger">
                                 <?=__('Tweaks','wpplc-swissknife')?>
                             </a>
@@ -60,6 +65,7 @@
                 require_once __DIR__.'/partials/commentsettings.php';
                 require_once __DIR__.'/partials/revisionsettings.php';
                 require_once __DIR__.'/partials/tweaks.php';
+                require_once __DIR__.'/partials/elementor.php';
                 ?>
             </div>
             <!-- Content END -->
