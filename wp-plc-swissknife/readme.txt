@@ -52,6 +52,9 @@ Just install and active. no setup or configuration yet.
 
 == Changelog ==
 
+= 0.3.5 =
+* Added Elementor Font Display Swap
+
 = 0.3.4.1 =
 * hotfix - path corrections
 
