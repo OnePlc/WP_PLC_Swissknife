@@ -18,6 +18,17 @@ $sMessage = 'Fehler';
 $bSettingsVal = ($sVal == 1) ? true : false;
 switch($sName) {
     // disable rest-api (boolean)
+    case 'wpplc_swissknife_swapload_elementor_fonts':
+        // Update Option
+        update_option('wpplc_swissknife_swapload_elementor_fonts',$bSettingsVal);
+
+        // Show Message
+        $sMessage = 'Font Swap successfully ';
+        $sMessage .= ($bSettingsVal) ? ' <b>disabled</b>' : ' <b>enabled</b>';
+        $sClass = 'success';
+        break;
+
+    // disable rest-api (boolean)
     case 'wpplc_swissknife_disable_restapi':
         // Update Option
         update_option('wpplc_swissknife_disable_restapi',$bSettingsVal);

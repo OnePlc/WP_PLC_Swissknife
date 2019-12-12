@@ -1,4 +1,4 @@
-<article class="plc-admin-page-elementor plc-admin-page" style="padding: 10px 40px 40px 40px;">
+<article class="plc-admin-page-elementorsettings plc-admin-page" style="padding: 10px 40px 40px 40px;">
     <h1><?=__('More Tweaks','wpplc-swissknife')?></h1>
     <p>Here you have some more performance and security tweaks of swissknife plugin</p>
 
