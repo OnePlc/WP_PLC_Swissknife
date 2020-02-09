@@ -6,10 +6,12 @@
     <div class="plc-admin-settings-field">
         <label class="plc-settings-switch">
             <?php $bSwapLoadFonts = get_option( 'wpplc_swissknife_swapload_elementor_fonts', false ); ?>
-            <input name="wpplc_swissknife_swapload_elementor_fonts" type="checkbox" <?=($bSwapLoadFonts)?'checked':''?> class="plc-admin-ajax-checkbox">
+            <input name="wpplc_swissknife_swapload_elementor_fonts" type="checkbox" <?=($bSwapLoadFonts)?'checked':''?> class="plc-swissknife-ajax-checkbox">
             <span class="plc-settings-slider"></span>
         </label>
-        <span>Font Display "swap" For Elementor Fonts</span>
+        <span>
+            <?=__('Font Display "swap" For Elementor Fonts','wpplc-swissknife')?>
+        </span>
     </div>
     <!-- Elementor Font Swap Toggle -->
 </article>

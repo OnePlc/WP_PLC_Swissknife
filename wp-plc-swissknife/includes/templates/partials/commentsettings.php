@@ -4,8 +4,10 @@
     <!-- Rectangular switch -->
     <label class="plc-settings-switch">
         <?php $bDisableComments = get_option( 'wpplc_swissknife_disable_comments', false ); ?>
-        <input name="wpplc_swissknife_disable_comments" type="checkbox" <?=($bDisableComments)?'checked':''?> class="plc-admin-ajax-checkbox">
+        <input name="wpplc_swissknife_disable_comments" type="checkbox" <?=($bDisableComments)?'checked':''?> class="plc-swissknife-ajax-checkbox">
         <span class="plc-settings-slider"></span>
     </label>
-    <span>Disable Wordpress Comments</span>
+    <span>
+        <?=__('Disable Wordpress Comments','wpplc-swissknife')?>
+    </span>
 </article>

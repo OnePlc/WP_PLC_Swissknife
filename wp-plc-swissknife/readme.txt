@@ -52,6 +52,10 @@ Just install and active. no setup or configuration yet.
 
 == Changelog ==
 
+= 0.4.0 =
+* Removed some ugly formatted paths
+* partial code refactoring
+
 = 0.3.5 =
 * Added Elementor Font Display Swap
 
@@ -81,6 +85,9 @@ Just install and active. no setup or configuration yet.
 * First Version for Wordpress.org Repo
 
 == Upgrade Notice ==
+
+= 0.4 =
+* Implemented Feedback from Wordpress Plugin Review Team
 
 = 0.3.4.1 =
 * hotfix

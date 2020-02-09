@@ -6,7 +6,7 @@
     <div class="plc-admin-settings-field">
         <label class="plc-settings-switch">
             <?php $bDisableRevisions = get_option( 'wpplc_swissknife_disable_revisions', false ); ?>
-            <input name="wpplc_swissknife_disable_revisions" type="checkbox" <?=($bDisableRevisions)?'checked':''?> class="plc-admin-ajax-checkbox">
+            <input name="wpplc_swissknife_disable_revisions" type="checkbox" <?=($bDisableRevisions)?'checked':''?> class="plc-swissknife-ajax-checkbox">
             <span class="plc-settings-slider"></span>
         </label>
         <span>Disable Revisions for Pages / Posts / Custom Post Types</span>
@@ -25,7 +25,7 @@
     <div class="plc-admin-settings-field">
         <label class="plc-settings-switch">
             <?php $bDisableAutosave = get_option( 'wpplc_swissknife_disable_autosave', false ); ?>
-            <input name="wpplc_swissknife_disable_autosave" type="checkbox" <?=($bDisableAutosave)?'checked':''?> class="plc-admin-ajax-checkbox">
+            <input name="wpplc_swissknife_disable_autosave" type="checkbox" <?=($bDisableAutosave)?'checked':''?> class="plc-swissknife-ajax-checkbox">
             <span class="plc-settings-slider"></span>
         </label>
         <span>Disable Autosave for Pages / Posts / Custom Post Types</span>

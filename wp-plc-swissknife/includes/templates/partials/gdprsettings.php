@@ -19,7 +19,7 @@
     <!-- Rectangular switch -->
     <label class="plc-settings-switch">
         <?php $bEnableSitekitIPAnon = get_option( 'wpplc_swissknife_enable_sitekit_ip_anonymization', false ); ?>
-        <input name="wpplc_swissknife_enable_sitekit_ip_anonymization" type="checkbox" <?=($bEnableSitekitIPAnon)?'checked':''?> class="plc-admin-ajax-checkbox"<?=(!$bSiteKitInstalled)?' disabled':''?>>
+        <input name="wpplc_swissknife_enable_sitekit_ip_anonymization" type="checkbox" <?=($bEnableSitekitIPAnon)?'checked':''?> class="plc-swissknife-ajax-checkbox"<?=(!$bSiteKitInstalled)?' disabled':''?>>
         <span class="plc-settings-slider"></span>
     </label>
     <span>Enable IP Anonymization for Google Sitekit <?=$sSiteKitInfo?></span>

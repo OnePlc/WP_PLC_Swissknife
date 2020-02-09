@@ -7,14 +7,16 @@
             <div class="plc-settings-header-main">
                 <div style="width:33%; text-align: left;">
                     <div class="plc-settings-header-main-title">
-                        WP PLC Swissknife <small>Version <?=WPPLC_SWISSKNIFE_VERSION?></small>
+                        WP PLC Swissknife <small>Version <?=(defined('WPPLC_SWISSKNIFE_VERSION')) ? WPPLC_SWISSKNIFE_VERSION : '(unknown)'?></small>
                     </div>
                 </div>
                 <div style="width:33%; text-align: center;">
-                    <img src="<?=WPPLC_SWISSKNIFE_PUB_DIR?>/assets/img/icon.png" style="max-height:42px;"/>
+                    <img src="<?=plugins_url('assets/img/icon.png', WPPLC_SWISSKNIFE_MAIN_FILE)?>" />
                 </div>
                 <div style="width:33%; text-align: right;">
-                    Need help?
+                    <a href="https://t.me/wp_plc_swissknife" target="_blank" title="Telegram Support">
+                        <?=__('Need help?','wpplc')?>
+                    </a>
                 </div>
             </div>
         </div>

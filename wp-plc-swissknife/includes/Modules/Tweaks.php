@@ -17,15 +17,15 @@ final class Tweaks {
     /**
      * Main instance of the module
      *
-     * @since 0.1-stable
      * @var Plugin|null
+     * @since 0.1.0
      */
     private static $instance = null;
 
     /**
      * Custom wordpress tweaks
      *
-     * @since 0.1-stable
+     * @since 0.1.0
      */
     public function register() {
         // Disable wordpress emojis
@@ -243,9 +243,8 @@ final class Tweaks {
     /**
      * Loads the module main instance and initializes it.
      *
-     * @since 0.1-stable
-     *
      * @return bool True if the plugin main instance could be loaded, false otherwise.
+     * @since 0.1.0
      */
     public static function load() {
         if ( null !== static::$instance ) {

@@ -6,7 +6,7 @@
     <div class="plc-admin-settings-field">
         <label class="plc-settings-switch">
             <?php $bDisableEmojis = get_option( 'wpplc_swissknife_disable_emojis', false ); ?>
-            <input name="wpplc_swissknife_disable_emojis" type="checkbox" <?=($bDisableEmojis)?'checked':''?> class="plc-admin-ajax-checkbox">
+            <input name="wpplc_swissknife_disable_emojis" type="checkbox" <?=($bDisableEmojis)?'checked':''?> class="plc-swissknife-ajax-checkbox">
             <span class="plc-settings-slider"></span>
         </label>
         <span>Disable Wordpress Emojis</span>
@@ -17,7 +17,7 @@
     <div class="plc-admin-settings-field">
         <label class="plc-settings-switch">
             <?php $bDisableXMLRPC = get_option( 'wpplc_swissknife_disable_xmlrpc', false ); ?>
-            <input name="wpplc_swissknife_disable_xmlrpc" type="checkbox" <?=($bDisableXMLRPC)?'checked':''?> class="plc-admin-ajax-checkbox">
+            <input name="wpplc_swissknife_disable_xmlrpc" type="checkbox" <?=($bDisableXMLRPC)?'checked':''?> class="plc-swissknife-ajax-checkbox">
             <span class="plc-settings-slider"></span>
         </label>
         <span>Disable XML-RPC Interface</span>
@@ -28,7 +28,7 @@
     <div class="plc-admin-settings-field">
         <label class="plc-settings-switch">
             <?php $bDisableEmbeds = get_option( 'wpplc_swissknife_disable_embeds', false ); ?>
-            <input name="wpplc_swissknife_disable_embeds" type="checkbox" <?=($bDisableEmbeds)?'checked':''?> class="plc-admin-ajax-checkbox">
+            <input name="wpplc_swissknife_disable_embeds" type="checkbox" <?=($bDisableEmbeds)?'checked':''?> class="plc-swissknife-ajax-checkbox">
             <span class="plc-settings-slider"></span>
         </label>
         <span>Disable Embeds</span>
@@ -39,7 +39,7 @@
     <div class="plc-admin-settings-field">
         <label class="plc-settings-switch">
             <?php $bDisableSelfPingback = get_option( 'wpplc_swissknife_disable_self_pingback', false ); ?>
-            <input name="wpplc_swissknife_disable_self_pingback" type="checkbox" <?=($bDisableSelfPingback)?'checked':''?> class="plc-admin-ajax-checkbox">
+            <input name="wpplc_swissknife_disable_self_pingback" type="checkbox" <?=($bDisableSelfPingback)?'checked':''?> class="plc-swissknife-ajax-checkbox">
             <span class="plc-settings-slider"></span>
         </label>
         <span>Disable Self-Pingback</span>
@@ -50,7 +50,7 @@
     <div class="plc-admin-settings-field">
         <label class="plc-settings-switch">
             <?php $bRemoveQryStatic = get_option( 'wpplc_swissknife_remove_qry_static', false ); ?>
-            <input name="wpplc_swissknife_remove_qry_static" type="checkbox" <?=($bRemoveQryStatic)?'checked':''?> class="plc-admin-ajax-checkbox">
+            <input name="wpplc_swissknife_remove_qry_static" type="checkbox" <?=($bRemoveQryStatic)?'checked':''?> class="plc-swissknife-ajax-checkbox">
             <span class="plc-settings-slider"></span>
         </label>
         <span>Remove Querystring from Static Resources</span>
@@ -61,7 +61,7 @@
     <div class="plc-admin-settings-field">
         <label class="plc-settings-switch">
             <?php $bRemoveJqueryMigrate = get_option( 'wpplc_swissknife_remove_jquery_migrate', false ); ?>
-            <input name="wpplc_swissknife_remove_jquery_migrate" type="checkbox" <?=($bRemoveJqueryMigrate)?'checked':''?> class="plc-admin-ajax-checkbox">
+            <input name="wpplc_swissknife_remove_jquery_migrate" type="checkbox" <?=($bRemoveJqueryMigrate)?'checked':''?> class="plc-swissknife-ajax-checkbox">
             <span class="plc-settings-slider"></span>
         </label>
         <span>Remove jQuery Migrate</span>
@@ -72,7 +72,7 @@
     <div class="plc-admin-settings-field">
         <label class="plc-settings-switch">
             <?php $bRemoveShortlink = get_option( 'wpplc_swissknife_remove_shortlink', false ); ?>
-            <input name="wpplc_swissknife_remove_shortlink" type="checkbox" <?=($bRemoveShortlink)?'checked':''?> class="plc-admin-ajax-checkbox">
+            <input name="wpplc_swissknife_remove_shortlink" type="checkbox" <?=($bRemoveShortlink)?'checked':''?> class="plc-swissknife-ajax-checkbox">
             <span class="plc-settings-slider"></span>
         </label>
         <span>Remove Shortlink</span>
@@ -83,7 +83,7 @@
     <div class="plc-admin-settings-field">
         <label class="plc-settings-switch">
             <?php $bDisableRSS = get_option( 'wpplc_swissknife_disable_rssfeeds', false ); ?>
-            <input name="wpplc_swissknife_disable_rssfeeds" type="checkbox" <?=($bDisableRSS)?'checked':''?> class="plc-admin-ajax-checkbox">
+            <input name="wpplc_swissknife_disable_rssfeeds" type="checkbox" <?=($bDisableRSS)?'checked':''?> class="plc-swissknife-ajax-checkbox">
             <span class="plc-settings-slider"></span>
         </label>
         <span>Disable RSS Feeds</span>
@@ -94,7 +94,7 @@
     <div class="plc-admin-settings-field">
         <label class="plc-settings-switch">
             <?php $bDisableRestAPI = get_option( 'wpplc_swissknife_disable_restapi', false ); ?>
-            <input name="wpplc_swissknife_disable_restapi" type="checkbox" <?=($bDisableRestAPI)?'checked':''?> class="plc-admin-ajax-checkbox">
+            <input name="wpplc_swissknife_disable_restapi" type="checkbox" <?=($bDisableRestAPI)?'checked':''?> class="plc-swissknife-ajax-checkbox">
             <span class="plc-settings-slider"></span>
         </label>
         <span>Disable REST API (if not logged-in)</span>
